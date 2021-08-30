@@ -16,6 +16,13 @@ Owner can view appointments
 
 ### Customer side UI
 
+#### Sign Up Process
+
+https://user-images.githubusercontent.com/80756129/131368971-cfeb1bb5-5a23-4c90-9175-5460e6531cb0.mp4
+
+
+#### Book Appointment Process
+
 https://user-images.githubusercontent.com/80756129/131322186-4b5111af-7be5-49cb-9591-1bab58dfe2e4.mp4
 
 ### Owner side UI
