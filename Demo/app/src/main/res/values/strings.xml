@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Garage Buddy</string>
+    <string name="err_fname">Please enter valid name</string>
+    <string name="err_lname">Please enter valid name</string>
+    <string name="err_uname">Please enter valid username</string>
+    <string name="err_email">Please enter valid email</string>
+    <string name="err_pass1">Please enter valid password</string>
+    <string name="err_pass2">Password does not match</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string-array name="Facility">
+        <item>servicing</item>
+        <item>puncture</item>
+    </string-array>
+</resources>

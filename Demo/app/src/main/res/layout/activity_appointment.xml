@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Appointment"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/eddate"
+        android:layout_width="199dp"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_weight="3.5"
+        android:hint="Date"
+        app:layout_constraintEnd_toStartOf="@+id/btngocalender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btngocalender"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/eddate"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1.0"
+        android:onClick="displayCalender"
+        android:text="Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eddate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/edtime"
+        android:layout_width="194dp"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginRight="156dp"
+        android:layout_weight="4"
+        android:hint="Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eddate" />
+
+
+    <Spinner
+        android:id="@+id/vehicaltype"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="51dp"
+        android:text="Choose vechical"
+        app:layout_constraintBottom_toTopOf="@+id/menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtime" />
+
+
+    <Spinner
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="63dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnConfirmAppt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vehicaltype" />
+
+
+    <Button
+        android:id="@+id/btnConfirmAppt"
+        android:layout_width="132dp"
+        android:layout_height="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="71dp"
+        android:layout_weight="1"
+        android:onClick="saveAppointment"
+        android:text="Confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancelAppt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu" />
+
+    <Button
+        android:id="@+id/btnCancelAppt"
+        android:layout_width="96dp"
+        android:layout_height="47dp"
+        android:layout_alignBottom="@+id/btnConfirmAppt"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="71dp"
+        android:layout_weight="1"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/edtime"
+        android:layout_marginTop="49dp"
+        android:layout_marginBottom="59dp"
+        android:onClick="displayClock"
+        android:text="Time"
+        app:layout_constraintBottom_toTopOf="@+id/vehicaltype"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toEndOf="@+id/edtime"
+        app:layout_constraintTop_toBottomOf="@+id/btngocalender"
+        app:layout_constraintVertical_bias="0.452" />
+
+
+</android.support.constraint.ConstraintLayout>
